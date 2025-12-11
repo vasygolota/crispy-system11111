@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Анімація marquee та CSS</title>
+
+  <link rel="stylesheet" href="marquee_styles.css">
+</head>
+<body>
+
+  <h1>Анімація: тег &lt;marquee&gt; та CSS @keyframes</h1>
+
+  <div class="card">
+    <h2>Класичний тег &lt;marquee&gt;</h2>
+
+    <marquee behavior="scroll" direction="left" scrollamount="6">
+      Це приклад руху тексту вліво за допомогою тегу marquee.
+    </marquee>
+
+    <pre>
+&lt;marquee behavior="alternate" direction="right" scrollamount="4"&gt;
+  Рух туди-сюди
+&lt;/marquee&gt;
+    </pre>
+  </div>
+
+  <div class="card">
+    <h2>CSS-анімація: горизонтальний ticker</h2>
+
+    <div class="ticker-wrap">
+      <div class="ticker">
+        <span class="item">Новина 1 — текст</span>
+        <span class="item">Новина 2 — оновлення</span>
+        <span class="item">Акція — знижка 20%</span>
+
+        <span class="item">Новина 1 — текст</span>
+        <span class="item">Новина 2 — оновлення</span>
+        <span class="item">Акція — знижка 20%</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>CSS вертикальна анімація</h2>
+
+    <div class="vertical-wrap">
+      <ul class="vertical-list">
+        <li>Повідомлення №1</li>
+        <li>Повідомлення №2</li>
+        <li>Повідомлення №3</li>
+
+        <li>Повідомлення №1</li>
+        <li>Повідомлення №2</li>
+        <li>Повідомлення №3</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>CSS Bounce-анімація</h2>
+
+    <div class="bounce" style="white-space:nowrap;">
+      <div class="text">
+        ⬅️➡️ Текст рухається туди-сюди, імітуючи відскок
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
