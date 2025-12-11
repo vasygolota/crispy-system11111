@@ -1,0 +1,97 @@
+
+body {
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Arial;
+  line-height: 1.5;
+  padding: 2rem;
+  background: #f7f7fb;
+  color: #111;
+}
+
+h1, h2 { margin: .5rem 0 1rem; }
+
+.card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1rem 1.25rem;
+  box-shadow: 0 6px 18px rgba(20,20,40,.06);
+  margin-bottom: 1.25rem;
+}
+
+pre {
+  background: #0b1220;
+  color: #cfe9ff;
+  padding: 1rem;
+  border-radius: 8px;
+  overflow: auto;
+}
+
+.ticker-wrap {
+  overflow: hidden;
+  position: relative;
+}
+
+.ticker {
+  display: inline-block;
+  white-space: nowrap;
+  will-change: transform;
+  animation: ticker 12s linear infinite;
+}
+
+@keyframes ticker {
+  from { transform: translateX(0%); }
+  to { transform: translateX(-50%); }
+}
+
+.ticker .item {
+  display: inline-block;
+  padding: 0 .75rem;
+  font-weight: 600;
+}
+
+.ticker-wrap:hover .ticker {
+  animation-play-state: paused;
+}
+
+.vertical-wrap {
+  height: 3.2rem;
+  overflow: hidden;
+}
+
+.vertical-list {
+  display: block;
+  animation: vertical 6s linear infinite;
+}
+
+@keyframes vertical {
+  0% { transform: translateY(0%); }
+  25% { transform: translateY(-33.333%); }
+  50% { transform: translateY(-66.666%); }
+  75% { transform: translateY(-100%); }
+  100% { transform: translateY(0%); }
+}
+
+.vertical-list li {
+  list-style: none;
+  padding: .4rem 0;
+}
+
+.bounce { overflow: hidden; }
+
+.bounce .text {
+  display: inline-block;
+  animation: bounce 4s ease-in-out infinite;
+}
+
+@keyframes bounce {
+  0% { transform: translateX(0); }
+  50% { transform: translateX(calc(100% - 100vw)); }
+  100% { transform: translateX(0); }
+}
+
+.muted { color: #666; font-size: .95rem; }
+
+code {
+  background: #eef2ff;
+  padding: .15rem .35rem;
+  border-radius: .25rem;
+}
